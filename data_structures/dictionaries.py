@@ -45,6 +45,19 @@ print(marks.keys())
 # values() - returns a view of all values
 print(marks.values())
 
+#get() = return value of the specified key
+print(marks.get("Alice"))
+
+#📌 Comparing dict[] vs dict.get() when a key doesn't exist
+
+marks = {"Alice": 90, "Bob": 85, "Charlie": 78}
+
+# Safe way to access a potentially missing key - returns None if key doesn't exist
+print(marks.get("Alice2"))  # Output: None
+
+# Direct access - raises KeyError if key doesn't exist
+print(marks["Alice2"])  # Raises KeyError: 'Alice2'
+
 # =============================================
 # Dictionary Methods for Modifying Data
 # =============================================
